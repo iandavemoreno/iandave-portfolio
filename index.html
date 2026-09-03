@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ian Dave Moreno | QA Engineer & Web Developer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header id="header">
+            <nav>
+                <a href="#hero" class="logo">Ian Dave</a>
+                <button id="nav-toggle" aria-label="Toggle menu">☰</button>
+                <ul id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h1>Ian Dave Moreno</h1>
+            <p class="tagline">QA Engineer with a growing Web Development Skillset</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Project</a>
+                <a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a QA Engineer with hands-on experience testing a live production platform —
+                writing test cases, running exploratory and regression testing, and tracking bugs
+                through Jira across Agile and Waterfall teams. Wanting to understand the
+                applications I test at a deeper level, I taught myself web development from
+                scratch and built ThreadLine, a full-stack e-commerce app, then covered it
+                end-to-end with a 459-test Playwright automation suite running in CI. I'm now
+                looking for a QA, QA Automation, or Junior Developer role where I can keep
+                growing both sides of that skill set.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>QA & Testing</h3>
+                    <ul>
+                        <li>Manual Testing</li>
+                        <li>Playwright (E2E Automation)</li>
+                        <li>API Testing</li>
+                        <li>Jira</li>
+                        <li>Agile & Waterfall</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Development</h3>
+                    <ul>
+                        <li>HTML / CSS /Javascript</li>
+                        <li>Node.js & Express</li>
+                        <li>SQLite</li>
+                        <li>Git & Github</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>ThreadLine</h3>
+                <p>A full e-commerce site built from scratch (vanilla JS frontend, Node/Express/SQLite backend), then covered end-to-end with a 459-test Playwright suite across 3 browswers, running in CI via Github Actions.</p>
+                <div class="tech-tags">
+                    <span>HTML/CSS/JS</span><span>Node.js</span><span>Express</span><span>SQLite</span><span>Playwright</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/iandavemoreno/threadline-ecommerce" target="_blank">Github</a>
+                    <!-- TODO: add a live demo link here once ThreadLine is displayed somewhere -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Open to QA / QA Automation / Junior Web Developer roles.</p>
+            <div class="contact-links">
+                <a href="mailto:morenoiandave@gmail.com">Email</a>
+                <a href="https://github.com/iandavemoreno" target="_blank">Github</a>
+                <!-- TODO: add you LinkedIn URL here -->
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
