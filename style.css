@@ -183,11 +183,25 @@ nav {
 }
 
 /* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
 .project-card {
   background: var(--color-bg-alt);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-card h3 {
@@ -207,55 +221,16 @@ nav {
 }
 
 .tech-tags span {
-  background: #fff;
-  border: 1px solid var(--color-border);
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
   border-radius: 20px;
   padding: 4px 12px;
   font-size: 0.85rem;
-  color: var(--color-text-light);
+  color: var(--color-primary-dark);
 }
 
 .project-links {
   display: flex;
   gap: 16px;
-}
-
-/* ---------- Contact ---------- */
-#contact {
-  text-align: center;
-}
-
-.contact-links {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-
-/* ---------- Desktop breakpoint ---------- */
-@media (min-width: 768px) {
-  #nav-toggle {
-    display: none;
-  }
-
-  #nav-links {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    border: none;
-    gap: 32px;
-  }
-
-  #nav-links li {
-    border-top: none;
-  }
-
-  #hero h1 {
-    font-size: 3rem;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+  margin-top: auto;
 }
